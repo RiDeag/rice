@@ -1,0 +1,596 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+  color: #59596a;
+  background: url(images/side_bg.png) repeat top left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+a:visited {
+	font-weight: normal;
+}
+
+a,
+a:link {
+  color: #b2b8c4;
+}
+
+a:hover,
+a:active {
+  color: #006a72;
+}
+
+a { -webkit-transition: color 0.2s; -moz-transition: color 0.2s;  -o-transition: color 0.2s ;  transition: color 0.2s; }
+
+
+#center {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, .05);
+	background: #fff;
+  width: 960px;
+  top: 0;
+  margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.cyan {
+  color: #006a72;
+}
+
+.grey {
+  color: #b2b8c4;
+}
+
+#bttop {
+  font-size: 13px;
+}
+
+#bttop .fixback {
+  color: #b2b8c4;
+}
+
+/**
+    Image hover
+*/
+
+#image-details {
+  position: absolute;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+	
+  width: 100%;
+	height: 75px;
+  bottom: 5px;
+  left: 0;
+  opacity: 0;
+  background: #292929;
+	font-size: 19px;
+}
+
+#imgCon:hover #hoverOverlay,
+#imgCon:hover #image-details { 
+ opacity: 1;
+}
+
+#hoverOverlay {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+	
+  position: absolute;
+	top: 30px;
+	left:0;
+	width: 100%;
+	height: calc(100% - 35px);
+	background: rgba(255, 255, 255, .5);
+	opacity: 0;
+}
+
+#viewfullImage {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+
+#viewCode {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+}
+
+
+
+/**
+    Header
+*/
+
+#headerContainer {
+  height: 150px;
+}
+
+#header {
+  height: 80px;
+	top: 0;
+	width: 900px;
+	margin: 0 auto;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#header #title {
+  width: 235px;
+  margin-left: 40px;
+  padding-top: 15px;
+  cursor: default;
+  font-size: 40px;
+}
+
+#header #visit a {
+  float: right;
+  margin-top: -2px;
+  margin-right: 25px;
+  font-size: 13px;
+}
+
+nav {
+  width: 820px;
+  height: 70px;
+	margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+nav ul li a {
+  margin: 0 110px 0 70px;
+  font-size: 23px;
+}
+
+nav ul li ul li a {
+  font-size: 15px;
+  margin: 0 ;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+  display: block; 
+  color: #b2b8c4;
+  text-decoration: none;
+}
+
+nav ul ul {
+  margin-right: 60px;
+	background: #fff;
+  padding: 0;
+}
+
+nav ul ul li {
+  float: none; 
+  position: relative;
+}
+
+nav ul ul li a {
+  padding: 15px 0;
+}
+
+/* title scrolling colour */
+
+#title .char1 {
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+#title .char2 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.05s;
+  -moz-transition: color 0.1s 0.05s;
+  -o-transition: color 0.1s 0.05s;
+  transition: color 0.1s 0.05s;
+}
+
+#title .char3 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition: color 0.1s 0.1s;
+  -o-transition: color 0.1s 0.1s;
+  transition: color 0.1s 0.1s;
+}
+
+#title .char4 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.15s;
+  -moz-transition: color 0.1s 0.15s;
+  -o-transition: color 0.1s 0.15s;
+  transition: color 0.1s 0.15s;
+}
+
+#title .char5 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition: color 0.1s 0.2s;
+  -o-transition: color 0.1s 0.2s;
+  transition: color 0.1s 0.2s;
+}
+
+#title .char6 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition: color 0.1s 0.25s;
+  -o-transition: color 0.1s 0.25s;
+  transition: color 0.1s 0.25s;
+}
+
+#title .char7 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition: color 0.1s 0.3s;
+  -o-transition: color 0.1s 0.3s;
+  transition: color 0.1s 0.3s;
+}
+
+#title .char8 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition: color 0.1s 0.35s;
+  -o-transition: color 0.1s 0.35s;
+  transition: color 0.1s 0.35s;
+}
+
+#title .char9 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition: color 0.1s 0.4s;
+  -o-transition: color 0.1s 0.4s;
+  transition: color 0.1s 0.4s;
+}
+
+#title .char10 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.45s;
+  -moz-transition: color 0.1s 0.45s;
+  -o-transition: color 0.1s 0.45s;
+  transition: color 0.1s 0.45s;
+}
+
+#title .char11 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: color 0.1s 0.5s;
+  -o-transition: color 0.1s 0.5s;
+  transition: color 0.1s 0.5s;
+}
+
+#title:hover .char1 {
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+  color: #006a72;
+}
+
+
+#title:hover .char2 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.05s;
+  -moz-transition: color 0.1s 0.05s;
+  -o-transition: color 0.1s 0.05s;
+  transition: color 0.1s 0.05s;
+  color: #006a72;
+}
+
+#title:hover .char3 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition: color 0.1s 0.1s;
+  -o-transition: color 0.1s 0.1s;
+  transition: color 0.1s 0.1s;
+  color: #006a72;
+}
+
+#title:hover .char4 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.15s;
+  -moz-transition: color 0.1s 0.15s;
+  -o-transition: color 0.1s 0.15s;
+  transition: color 0.1s 0.15s;
+  color: #006a72;
+}
+
+#title:hover .char5 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition: color 0.1s 0.2s;
+  -o-transition: color 0.1s 0.2s;
+  transition: color 0.1s 0.2s;
+  color: #006a72;
+}
+
+#title:hover .char6 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition: color 0.1s 0.25s;
+  -o-transition: color 0.1s 0.25s;
+  transition: color 0.1s 0.25s;
+  color: #006a72;
+}
+
+#title:hover .char7 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition: color 0.1s 0.3s;
+  -o-transition: color 0.1s 0.3s;
+  transition: color 0.1s 0.3s;
+  color: #006a72;
+}
+
+#title:hover .char8 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition: color 0.1s 0.35s;
+  -o-transition: color 0.1s 0.35s;
+  transition: color 0.1s 0.35s;
+  color: #006a72;
+}
+
+#title:hover .char9 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition: color 0.1s 0.4s;
+  -o-transition: color 0.1s 0.4s;
+  transition: color 0.1s 0.4s;
+  color: #006a72;
+}
+
+#title:hover .char10 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.45s;
+  -moz-transition: color 0.1s 0.45s;
+  -o-transition: color 0.1s 0.45s;
+  transition: color 0.1s 0.45s;
+  color: #006a72;
+}
+
+#title:hover .char11 {
+  -webkit-transition: color 0.1s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: color 0.1s 0.5s;
+  -o-transition: color 0.1s 0.5s;
+  transition: color 0.1s 0.5s;
+  color: #006a72;
+}
+
+
+/**
+    Firefox
+*/
+
+#firefox {
+  width: 820px;
+  margin: 0 auto;
+  text-align: center;
+	padding-bottom: 90px;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#firefox p {
+  color: #b2b8c4;
+  font-size: 30px;
+  cursor: default;
+  margin-left: 15px;
+}
+
+#firefox img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#firefox .preview {
+  position: relative;
+  top: 20px;
+  margin: 0 60px 0 60px;
+}
+
+#firefox .preview p {
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+
+#firefox .preview:not(.userChrome) {
+  margin-top: 75px;
+}
+
+#firefox .preview p .small {
+  font-size: 15px;
+}
+
+#firefox:before { 
+  display: block;
+  content: " ";
+  margin-top: -255px;
+  height: 285px;
+  visibility: hidden;
+}
+
+/**
+    Userstyles
+*/
+
+#userstyles:before {
+  display: block;
+  content: " ";
+  margin-top: 30px;
+  height: 10px;
+  visibility: hidden;
+}
+
+#userstyles {
+  width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#userstyles p {
+  color: #b2b8c4;
+  font-size: 30px;
+  cursor: default;
+  margin-left: 15px;
+}
+
+#userstyles img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#userstyles .preview {
+  position: relative;
+  top: 20px;
+  margin: 0 60px 0 60px;
+}
+
+#userstyles .preview p {
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+
+#userstyles .preview.stilig {
+  margin-top: 75px;
+}
+
+#userstyles .preview.comingsoon {
+  margin-top: 75px;
+}
+
+#userstyles .preview p .small {
+  font-size: 15px;
+}
+
+#inTips {
+  float: right;
+  margin-top: -20px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  font-size: 14px;
+}
+
+
+
+
+
+/**
+    Installation page
+*/
+
+#inTitleContainer {
+  height: 80px;
+	top: 0;
+	width: 900px;
+	margin: 0 auto;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#inTitle {
+  width: 800px;
+  margin-left: 20px;
+  padding-top: 1px;
+  cursor: default;
+  font-size: 40px;
+  color: #b2b8c4;
+}
+
+#inTitle p {
+  margin-top: 15px;
+}
+
+#inTitle a#back {
+  font-size: 23px;
+}
+
+#inTitle .fixback {
+  color: #b2b8c4;
+}
+
+
+/**
+		Install userChrome
+*/
+
+#inUserchrome {
+  width: 820px;
+  margin: 50px auto 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#inUserchrome h3 {
+  margin-bottom: 10px;
+}
+
+#inUserchrome li {
+  margin-left: 40px;
+  padding-bottom: 3px;
+}
+
+/**
+		Install Userstyles
+*/
+
+#inUserstyles {
+  width: 820px;
+  margin: 50px auto 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e1e2e3;
+}
+
+#inUserstyles h3 {
+  margin-bottom: 10px;
+}
+
+#inUserchrome h2,
+#inUserstyles h2,
+#inUserstyles h3 {
+  font-weight: normal;
+}
+
+#inUserstyles li {
+  margin-left: 40px;
+  padding-bottom: 3px;
+}
+
+#center > div:last-of-type {
+  margin-bottom: 200px;
+}
