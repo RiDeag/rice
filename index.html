@@ -1,69 +1,182 @@
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-	<meta charset='utf-8'>
-	<title>rice</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
-	<link rel="icon" type="image/png" id="favicon" href="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.js"></script>
-	<script type="text/javascript" src="assets/scripts.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Rice</title>
+  <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheet.css">
+	<link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="assets/jquery-1.10.2.min.js"></script>
 </head>
-    <header>
-      <div class="container">
-        <div id="title">
-            <span class="cyan">Ri</span><span class ="grey"><span class="char1">D</span><span class="char2">e</span><span class="char3">a</span><span class="char4">g</span><span class="char5">'</span><span class="char6">s</span>
-            <span class="char7">r</span><span class="char8">i</span><span class="char9">c</span><span class="char10">e</span></span>
-        </div>
-          <span id="headerlinks">
-            <a href="https://github.com/RiDeag/rice/issues?labels=&page=1&state=open">Bug reports</a>
-            <a href="https://github.com/RiDeag">View Github page</a>
-          </span>
-      </div>
-    </header>
 
-<div style="margin-top: 0; padding-top: 0;">
-  <div class="container">
-	
-		<div class="gallery right">
-			<div id="imgCon">
-				<a id ="firelink" href='assets/images/userchrome.png'>
-					<img id="firefox" src='assets/images/cropped/userchrome.png'>
-				</a>
-			</div>
-			
-      <div id="textCon">
-        <h3>Firefox Styles</h3>
-				<div class="ff desc">Gives a clean, simple design to firefox.</div>
-						
-				<div class="links">
-					<div class='firefox styleimg active' id="userchrome"><a href="https://github.com/RiDeag/dotfiles/blob/master/userChrome.css">userChrome</a></div>
-					<div class='firefox styleimg' id="nobg"><a href="https://github.com/RiDeag/dotfiles/blob/master/Blank%20PNG%20Background.css">No Background</a></div>
+<body>
+  <div id="w" class="clearfix">
+		<header>
+			<div class="container">
+				<div id="title">
+						<span class="cyan">Ri</span><span class ="grey"><span class="char1">D</span><span class="char2">e</span><span class="char3">a</span><span class="char4">g</span><span class="char5">'</span><span class="char6">s</span>
+						<span class="char7">r</span><span class="char8">i</span><span class="char9">c</span><span class="char10">e</span></span>
 				</div>
+					<div id="headerlinks">
+						<a href="https://github.com/RiDeag/rice/issues?labels=&page=1&state=open">Bug reports</a>
+						<a href="https://github.com/RiDeag">View Github page</a>
+					</div>
+			</div>
+			<div class="line"></div>
+		</header>
+
+		<ul id="sidemenu">
+			<div class="sidehead">Firefox Styles</div>
+			<li><span><a href="#userChrome-content" class="open">Kasuja</a></span></li>
+			<li><span><a href="#tranbg-content">Tran. Background</a></span></li>
+				
+			<div class="sidehead">4chan Styles</div>
+			<li><span><a href="#stilig-content">Stilig</a></span></li>
+			<li><span><a href="#stilfuld-content">Stilfuld</a></span></li>      
+			<li><span><a href="#svalish-content">Svalish</a></span></li>      
+			<li><span><a href="#stines-content">Stines</a></span></li>
+		</ul>
+			
+    <div id="content">
+      <div id="userChrome-content" class="contentblock">
+        <h1>Kasuja!<a href="https://raw.github.com/RiDeag/dotfiles/master/userChrome.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/userchrome.png" alt="userChrome">
+        <h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>Tested up to Firefox 23.</span></li>
+						<li><span>Definately will not work on Australis.</span></li>
+					</ul>
       </div>
+        
+      <div id="tranbg-content" class="contentblock hidden">
+        <h1>Transparent Background!<a href="https://raw.github.com/RiDeag/dotfiles/master/Blank%20PNG%20Background.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/nobg.gif" alt="No Background">
+         <h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>Tested up to Firefox 23.</span></li>
+						<li><span>Adds a slight checkerbox background on hover.</span></li>
+					</ul>         
+      </div>
+        
+      <div id="stilig-content" class="contentblock hidden">
+        <h1>Stilig!<a href="https://raw.github.com/RiDeag/Stilig/master/Stilig.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/stilig.png" alt="Stilig">
+        <h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>This style is written for, and will only work with seaweedchan's 4chanX fork available <a href="http://seaweedchan.github.io/4chan-x/">here</a>.</span></li>
+						<li><span>To get the board links to display properly, use the custom navigation found in the advanced section of the settings. Click <a href="http://i.imgur.com/duPWxIu.png">here</a> for an example.</span></li>
+						<li><span>In order to get the "+" (All boards toggle) after BOARDS you must have "toggle-all" in the Custom Board Navigation.</span></li>
+						<li><span>Sadly, many parts of the stylesheet break when used on Chrome. I may get around to fixing it one day, but I wouldn't count on it. Sorry.</span></li>
+						<li><span>Toggle the sidebar by toggling header auto-hide (Default keybind is shift + h).</span></li>
+					</ul>
+      </div>
+        
+			<div id="stilfuld-content" class="contentblock hidden">
+				<h1>Stilfuld!<a href="https://raw.github.com/RiDeag/Stilfuld/master/Stilfuld.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/stilfuld.png" alt="Stilfuld">
+				<h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>This style is written for, and will only work with seaweedchan's 4chanX fork available <a href="http://seaweedchan.github.io/4chan-x/">here</a>.</span></li>
+						<li><span>You MUST have "Current" in your custom navigation.</span></li>
+						<li><span>Hover over the current board title on the top left to view board list</span></li>
+						<li><span>For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.</span></li>
+						<li><span>Open the Quick reply by pressing "i" close it by pressing esc.</span></li>
+						<li><span>Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu</span></li>
+						<li><span>Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.</span></li>
+					</ul>
+			</div>        
+				
+			<div id="svalish-content" class="contentblock hidden">
+				<h1>Svalish!<a href="https://raw.github.com/RiDeag/svalish/master/svalish.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/svalish.png" alt="Svalish">
+				<h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>This style is written for, and will only work with seaweedchan's 4chanX fork available <a href="http://seaweedchan.github.io/4chan-x/">here</a>.</span></li>
+						<li><span>Hover over the current board title on the top left to view board list</span></li>
+						<li><span>For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.</span></li>
+						<li><span>Open the Quick reply by pressing "i" close it by pressing esc.</span></li>
+						<li><span>Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu</span></li>
+						<li><span>Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.</span></li>
+					</ul>
+			</div>				
+				
+			<div id="stines-content" class="contentblock hidden">
+				<h1>Stines!<a href="https://raw.github.com/RiDeag/Stines/master/Stines.css"> - Get code</a></h1>
+				<img class="imgpreview" src="assets/images/stines.png" alt="Stines">
+				<h2>Installation</h2>
+					<ul>
+						<li><span>Install the Add-on <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Stylish</a>.</span></li>
+						<li><span>Go to your Add-ons Manager, select User Styles and write a new style.</span></li>
+						<li><span>Give the style a name and paste in the code.</span></li>
+					</ul>
+				<h2>Notes</h2>
+					<ul>
+						<li><span>This style is written for, and will only work with seaweedchan's 4chanX fork available <a href="http://seaweedchan.github.io/4chan-x/">here</a>.</span></li>
+						<li><span>You MUST have "Current" in your custom navigation.</span></li>
+						<li><span>Hover over the current board title on the top left to view board list</span></li>
+						<li><span>For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.</span></li>
+						<li><span>Open the Quick reply by pressing "i" close it by pressing esc.</span></li>
+						<li><span>Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu</span></li>
+						<li><span>Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.</span></li>
+						<li><span>This is currently a WIP. There are many many issues and the overall look may change. Be warned.</span></li>
+					</ul>
+			</div>
     </div>
-	
- 		<div class="gallery right">
-			<div id="imgCon">
-				<a id ="4clink" href='assets/images/stilig.png'>
-				<img id="4chan" src='assets/images/cropped/stilig.png'>
-				</a>
-			</div>
-			
-      <div id="textCon">
-        <h3>4chan Styles</h3>		
-				<div class="4c desc">A bright, simple userstyle for 4chan. Original concept by <a href='https://github.com/Mysoon'>Myson</a></div>
-				<div class="links">
-					<div class='4chan styleimg active' id="stilig"><a href="https://github.com/RiDeag/Stilig/blob/master/Stilig.css">Stilig</a></div>
-					<div class='4chan styleimg' id="stilfuld"><a href="https://github.com/RiDeag/Stilfuld/blob/master/Stilfuld.css">Stilfuld</a></div>
-					<div class='4chan styleimg' id="svalish"><a href="https://github.com/RiDeag/Svalish/blob/master/Svalish.css">Svalish</a></div>
-				</div>
-			</div>
-    </div>			
-	</div>
-</div>
-<a title="web stats" href="http://statcounter.com/"
-target="_blank"><img
-src="http://c.statcounter.com/9249357/0/9e8a885c/1/"
-alt="web stats" style="border:none;"></a>
+  </div>
+
+<script type="text/javascript">
+$(function(){
+  $('#sidemenu a').on('click', function(e){
+    e.preventDefault();
+
+    if($(this).hasClass('open')) {
+      // do nothing because the link is already open
+    } else {
+      var oldcontent = $('#sidemenu a.open').attr('href');
+      var newcontent = $(this).attr('href');
+      
+      $(oldcontent).fadeOut('fast', function(){
+        $(newcontent).fadeIn().removeClass('hidden');
+        $(oldcontent).addClass('hidden');
+      });
+      
+      $('#sidemenu a').removeClass('open');
+      $(this).addClass('open');
+			  var id = $("#link_location").text();
+    }
+  });
+});
+
+</script>
 </body>
 </html>
