@@ -231,6 +231,11 @@ p {
   padding-top: 50px;
 }
 
+#content > div {
+  padding-top: 150px;
+	margin-top: -150px;
+}
+
 .contentblock {
   display: block;
   padding: 0px 20px 15px;
@@ -286,7 +291,7 @@ p {
   background: #f2f2f2;
 }
 
-#sidemenu li a:hover:after {
+#sidemenu li:hover:after {
   position: absolute;
 	top: 0px;
 	right: -1px;
@@ -294,7 +299,7 @@ p {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAhCAMAAAA4RaFEAAAAPFBMVEUAAADy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL61rZ8AAAAE3RSTlMAPXOXHOAP8SwH0IDEWlGt/WmN/qq/WAAAAFtJREFUGNNtzjkOgEAQA8FZ9j4R+P9/JRs7wFElltqOcbXQiGIEce40phhNPMR4xEjiW4wjroVGFCOIc6cxxUPc6IvfZXSi929bLXQw92vu3Olm7svcy+hEb/IDVmANe9llod0AAAAASUVORK5CYII=);
 }
 
-#sidemenu li a.open:after {
+#sidemenu li.open:after {
   position: absolute;
 	top: 0px;
 	right: -1px;
@@ -307,7 +312,7 @@ p {
   margin-top: 5px;
 }
 
-#sidemenu li a.open {
+#sidemenu li.open a{
   width: 101%;
 	color: #fff;
   background: #e43c18;

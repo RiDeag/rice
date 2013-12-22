@@ -28,18 +28,18 @@
 
 		<ul id="sidemenu">
 			<div class="sidehead">Firefox Styles</div>
-			<li><span><a href="#userChrome-content" class="open">Kasuja</a></span></li>
-			<li><span><a href="#tranbg-content">Tran. Background</a></span></li>
+			<li><span><a href="#kasuja" class="open">Kasuja</a></span></li>
+			<li><span><a href="#tranbg">Tran. Background</a></span></li>
 				
 			<div class="sidehead">4chan Styles</div>
-			<li><span><a href="#stilig-content">Stilig</a></span></li>
-			<li><span><a href="#stilfuld-content">Stilfuld</a></span></li>      
-			<li><span><a href="#svalish-content">Svalish</a></span></li>      
-			<li><span><a href="#stines-content">Stines</a></span></li>
+			<li><span><a href="#stilig">Stilig</a></span></li>
+			<li><span><a href="#stilfuld">Stilfuld</a></span></li>      
+			<li><span><a href="#svalish">Svalish</a></span></li>      
+			<li><span><a href="#stines">Stines</a></span></li>
 		</ul>
 			
     <div id="content">
-      <div id="userChrome-content" class="contentblock">
+      <div id="kasuja" class="contentblock">
         <h1>Kasuja!<a href="https://raw.github.com/RiDeag/dotfiles/master/userChrome.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/userchrome.png" alt="userChrome">
         <h2>Installation</h2>
@@ -55,7 +55,7 @@
 					</ul>
       </div>
         
-      <div id="tranbg-content" class="contentblock hidden">
+      <div id="tranbg" class="contentblock">
         <h1>Transparent Background!<a href="https://raw.github.com/RiDeag/dotfiles/master/Blank%20PNG%20Background.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/nobg.gif" alt="No Background">
          <h2>Installation</h2>
@@ -71,7 +71,7 @@
 					</ul>         
       </div>
         
-      <div id="stilig-content" class="contentblock hidden">
+      <div id="stilig" class="contentblock">
         <h1>Stilig!<a href="https://raw.github.com/RiDeag/Stilig/master/Stilig.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/stilig.png" alt="Stilig">
         <h2>Installation</h2>
@@ -90,7 +90,7 @@
 					</ul>
       </div>
         
-			<div id="stilfuld-content" class="contentblock hidden">
+			<div id="stilfuld" class="contentblock">
 				<h1>Stilfuld!<a href="https://raw.github.com/RiDeag/Stilfuld/master/Stilfuld.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/stilfuld.png" alt="Stilfuld">
 				<h2>Installation</h2>
@@ -111,7 +111,7 @@
 					</ul>
 			</div>        
 				
-			<div id="svalish-content" class="contentblock hidden">
+			<div id="svalish" class="contentblock">
 				<h1>Svalish!<a href="https://raw.github.com/RiDeag/svalish/master/svalish.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/svalish.png" alt="Svalish">
 				<h2>Installation</h2>
@@ -131,7 +131,7 @@
 					</ul>
 			</div>				
 				
-			<div id="stines-content" class="contentblock hidden">
+			<div id="stines" class="contentblock">
 				<h1>Stines!<a href="https://raw.github.com/RiDeag/Stines/master/Stines.css"> - Get code</a></h1>
 				<img class="imgpreview" src="assets/images/stines.png" alt="Stines">
 				<h2>Installation</h2>
@@ -156,28 +156,31 @@
   </div>
 
 <script type="text/javascript">
-$(function(){
-  $('#sidemenu a').on('click', function(e){
-    e.preventDefault();
+	$(function () {         
+		if (location.hash != "") {
+			selectTab(location.hash);
+		}
+		else {
+			selectTab("#kasuja");
+		}
+	});
 
-    if($(this).hasClass('open')) {
-      // do nothing because the link is already open
-    } else {
-      var oldcontent = $('#sidemenu a.open').attr('href');
-      var newcontent = $(this).attr('href');
-      
-      $(oldcontent).fadeOut('fast', function(){
-        $(newcontent).fadeIn().removeClass('hidden');
-        $(oldcontent).addClass('hidden');
-      });
-      
-      $('#sidemenu a').removeClass('open');
-      $(this).addClass('open');
-			  var id = $("#link_location").text();
-    }
-  });
-});
+	function selectTab(hash) {
+		$("#sidemenu li").removeClass("open");
+		$("a[href$=" + hash + "]").closest("li").addClass("open");
+		$("#content > div").hide();
+		location.hash = hash;
+		$(hash).show();
+	}
 
+	$("#sidemenu li a").click(function (e) {
+		var t = e.target;
+		if (t.href.indexOf("#") != -1) {
+			var hash = t.href.substr(t.href.indexOf("#"));
+			selectTab(hash);
+			return false;
+		}
+	});
 </script>
 </body>
 </html>
